@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Register / Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="author" content="Anna Ralph">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="../img/logo.jpg" alt="Ministry of Labour Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/ojt-overview.html">OJT Program</a></li>
+            <li><a href="../html/testimonials.html">Testimonials</a></li>
+            <li><a href="#">Register / Login</a></li>
+            <li><a href="../html/faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="register-form">
+        <h1>Register for Updates</h1>
+        <p>Create an account to receive updates and apply for upcoming placements.</p>
+
+		<!-- Reference: W3Schools (2025). HTML onsubmit Event.
+		Available at: https://www.w3schools.com/jsref/event_onsubmit.asp  -->
+		
+		<!-- *Reference: W3Schools. (2025). HTML Forms. [Online]. Available at: https://www.w3schools.com/html/html_forms.asp * -->
+        <form action="#" method="post" onsubmit="alert('Thank you, your information has been recorded.');return false;">
+            <fieldset>
+                <legend>Personal Information</legend> 
+                <label>Name:
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>Date of Birth:
+                    <input type="date" name="dob" required>
+                </label>
+
+                <label>Gender:
+                    <select name="gender">
+                        <option value="">-- Select --</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <label>Email:
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>Phone Number:
+                    <input type="tel" name="phone">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Login Credentials</legend>
+                <label>Username:
+                    <input type="text" name="username" required>
+                </label>
+
+                <label>Password:
+                    <input type="password" name="password" required>
+                </label>
+
+                <label>Confirm Password:
+                    <input type="password" name="confirm_password" required>
+                </label>
+            </fieldset>
+
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Ministry of Labour | Trinidad and Tobago</p>
+</footer>
+
+</body>
+</html>

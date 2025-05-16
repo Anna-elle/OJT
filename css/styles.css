@@ -1,0 +1,166 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #0A3D62;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+/*Reference: W3Schools. (2025). Navigation Bar Using Flexbox. [Online]. Available at: https://www.w3schools.com/css/css_navbar.asp */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    background: url('../img/ojt.png') no-repeat center center/cover;
+    color: #000000;
+    padding: 5em 2em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Reference: W3Schools (2025). CSS Buttons. 
+     Available at: https://www.w3schools.com/css/css3_buttons.asp  */
+      
+.btn {
+    display: inline-block;
+    background-color: #2ECC71;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+section h2 {
+    margin-top: 2em;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+/* Testimonial Page */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2em;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.stars {
+    color: gold;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+label {
+    display: block;
+    margin: 1em 0 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: #0A3D62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+    color: black;
+}
+
+footer {
+    background-color: #0A3D62;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
