@@ -1,0 +1,330 @@
+/* ====== Variables ====== */
+:root {
+  --primary: #0A3D62;
+  --secondary: #2ECC71;
+  --accent: #FFC300; /* Yellow CTA color */
+  --dark: #333;
+  --light: #fff;
+  --gray: #e0e0e0;
+  --light-bg: #f9f9f9;
+}
+
+/* ====== Base Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light-bg);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/* ====== Layout Components ====== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ====== Header & Navigation ====== */
+header {
+  background: var(--primary);
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo-container {
+  text-align: center;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  color: var(--light);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+nav a:hover,
+nav a.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ====== Hero Sections ====== */
+.hero {
+  position: relative;
+  height: 50vh;
+  min-height: 300px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000000;
+  background: rgba(10, 61, 98, 0.8);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+}
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+/* ====== Full Width Banners for FAQ & OJT Pages ====== */
+.faq-banner,
+.ojt-banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2rem;
+}
+
+/* ====== Forms ====== */
+.form-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+}
+.form-group textarea {
+  min-height: 100px;
+}
+fieldset {
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+}
+.terms-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+.form-submit {
+  text-align: center;
+}
+
+/* ====== Buttons ====== */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--accent); /* Yellow CTA buttons */
+  color: var(--primary);
+}
+.btn-primary:hover {
+  background: #e6b000;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn-secondary {
+  background: var(--primary);
+  color: var(--light);
+}
+.btn-secondary:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+/* ====== Utility Classes ====== */
+.required {
+  color: #E74C3C;
+}
+.text-center {
+  text-align: center;
+}
+
+/* ====== Footer ====== */
+footer {
+  background: var(--primary);
+  color: var(--light);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-section {
+  flex: 1 1 300px;
+}
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+/* ====== Media Queries ====== Media queries are commonly used in responsive web design to adjust layout based on screen size (W3Schools, n.d.) */
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav ul::-webkit-scrollbar {
+    display: none;
+  }
+  .faq-banner,
+  .ojt-banner  {
+    height: 250px;
+  }
+}
+
+.page-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.cta-button {
+    background-color: #FFD700; /* Yellow color */
+    color: #000; /* Black text for better contrast */
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #FFC000; /* Slightly darker yellow on hover */
+    color: #000;
+}
+
+checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Adjust spacing between checkboxes as needed */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and text */
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0; /* Remove any default margins */
+    width: 16px; /* Standard checkbox size */
+    height: 16px;
+    cursor: pointer;

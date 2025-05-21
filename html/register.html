@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for OJT Program | Ministry of Labour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Ministry of Labour Logo" width="180">
+        </div>
+        <nav>
+            <ul class="flex">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ojt-overview.html">Program</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <img src="../img/register-hero.jpg" alt="Person filling out application form" class="hero-image">
+            <div class="hero-text">
+                <h1>OJT Program Registration</h1>
+                <p>Complete your application in just a few minutes</p>
+            </div>
+        </section>
+
+        <div class="form-container">
+            <h2 class="section-title">Application Form</h2>
+            <p class="form-instructions">Please fill out all required fields marked with <span class="required">*</span></p>
+            
+            <form action="../thankyou.html" method="post" class="registration-form">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name <span class="required">*</span></label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name <span class="required">*</span></label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Full Address <span class="required">*</span></label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Training Preferences -->
+                <fieldset>
+                    <legend>Training Preferences</legend>
+                    <div class="form-group">
+                        <label>Preferred Training Fields <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="field-construction" value="construction"> Construction</label>
+                            <label><input type="checkbox" name="field-healthcare" value="healthcare"> Healthcare</label>
+                            <label><input type="checkbox" name="field-it" value="it"> Information Technology</label>
+                            <label><input type="checkbox" name="field-hospitality" value="hospitality"> Hospitality</label>
+                            <label><input type="checkbox" name="field-admin" value="administration"> Office Administration</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="location">Preferred Location <span class="required">*</span></label>
+                            <select id="location" name="location" required>
+                                <option value="">Select a location</option>
+                                <option value="port-of-spain">Port of Spain</option>
+                                <option value="san-fernando">San Fernando</option>
+                                <option value="arima">Arima</option>
+                                <option value="tobago">Tobago</option>
+								<option value="siparia">Siparia</option>
+								<option value="chaguanas">Chaguanas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="availability">When can you start? <span class="required">*</span></label>
+                            <select id="availability" name="availability" required>
+                                <option value="">Select availability</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="1month">Within 1 month</option>
+                                <option value="3months">Within 3 months</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Terms and Submission -->
+                <div class="form-group terms-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="../pdf/ojt-terms.pdf" target="_blank">terms and conditions</a> <span class="required">*</span></label>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: ojt@labour.gov.tt</p>
+                <p>Phone: (868) 623-8471</p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 Ministry of Labour, Trinidad and Tobago</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
